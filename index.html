@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/star.ico">
+    <title>Luka Brankovic</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://kit.fontawesome.com/8e607cf7cb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- ---------Loader------------ --> 
+    <div class="loader"></div>
+<!-- ---------Home------------ --> 
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="img/Logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Passion</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>CODER & STUDENT</p>
+            <h1>Hi, I'm <span>Luka</span> Brankovic <br> from Switzerland</h1>
+        </div>
+    </div>
+</div>
+<!-- ---------About------------ -->  
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <video id="AboutMeVideo" width="420" height="370" controls autoplay>
+                    <source src="img/Video.mp4" type=video/mp4>
+                </video>
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title2">ABOUT ME</h1>
+                <p>Hi, my name is Luka Brankovic and I am 18 years old. I am currently a student at the KSB. At the KSB I attend the IMS. </p>
+            
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Python Development</span><br>Coding Python Scripts</li>
+                        <li><span>Web Development</span><br>Coding Websites</li>
+                        <li><span>App Development</span><br>Building Apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Internship, 2011</span><br>Swissoptic AG / IT-Support</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2011 to 2014</span><br>Primary school, Zurich</li>
+                        <li><span>2014 to 2016</span><br>Primary school, Zurich</li>
+                        <li><span>2016 to 2017</span><br>Primary school, Widnau</li>
+                        <li><span>2017 to 2018</span><br>Secondary school, Widnau</li>
+                        <li><span>2018 to 2019</span><br>Secondary school, Widnau</li>
+                        <li><span>2019 to 2020</span><br>Secondary school, Widnau</li>
+                        <li><span>Currently</span><br>Computer Science Middle School, St. Gallen</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------------portfolio------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">MY PASSION</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="img/Bild2.jpg">
+                <div class="layer">
+                    <h1>BMW M3 / AUDI RS4</h1>
+                    <p>SPOTTED IN MANCHSTER (UK)</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/Bild1.jpg">
+                <div class="layer">
+                    <h1>AUDI TTRS</h1>
+                    <p>SPOTTED IN MANCHSTER (UK)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------- skill ------------ -->  
+<div id="Skills">
+    <h4 class="stat-title">My Skills</h4>
+    <div class="progress-bars">
+        <div class="progress-bar">
+            <p class="prog-title">HTML5</p>
+            <div class="progress-con">
+                <p class="prog-text">70%</p>
+                <div class="progress">
+                    <span class="html"></span>
+                </div>
+            </div>
+        </div>
+        <div class="progress-bar">
+            <p class="prog-title">css</p>
+            <div class="progress-con">
+                <p class="prog-text">95%</p>
+                <div class="progress">
+                    <span class="css"></span>
+                </div>
+            </div>
+        </div>
+        <div class="progress-bar">
+            <p class="prog-title">javascript</p>
+            <div class="progress-con">
+                <p class="prog-text">75%</p>
+                <div class="progress">
+                    <span class="js"></span>
+                </div>
+            </div>
+        </div>
+        <div class="progress-bar">
+            <p class="prog-title">Python</p>
+            <div class="progress-con">
+                <p class="prog-text">70%</p>
+                <div class="progress">
+                    <span class="python"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------services------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">MY SERVICE</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Web development according to your wishes!</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Python Development</h2>
+                <p>Python development according to your wishes!</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App Development</h2>
+                <p>App development according to your wishes!</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title2">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> Luka.Steric@ksb-sg.ch</p>
+                <p><i class="fa-solid fa-phone"></i> +41 78 826 90 02</p>
+                <div class="social-icons">
+                    <a href="https://github.com/Toxicslyx"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/luka-steric-05235822a/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="img/Lebenslauf_StericLuka.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Luka Brankovic</p>
+    </div>
+</div>
+
+
+<!-- ---------JavaScritp------------ --> 
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader--hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+});
+</script>
+
+</body>
+</html>
